@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            position:relative;
+            right: 0px
+        }
+    </style>
+</head>
+<body>
+    <div class="btn btn-primary" onclick="moveLeft(-20)  ">Left</div>
+    <div class="btn btn-primary" onclick="moveLeft(20)  ">Right</div>
+
+    <div class="btn btn-primary" onclick="moveTop(-20)  ">Top</div>
+    <div class="btn btn-primary" onclick="moveTop(20)  ">bottom</div>
+
+
+    <img src="images/emil.jpeg" alt="">
+
+    <script>
+        let left = 0;
+        let t = 0;
+
+
+        const moveLeft = (direction) => {
+            const emilEl = document.querySelector('img')
+            left = left + direction
+            emilEl.style.left = left + "px"
+        }
+        const moveTop = (direction) => {
+            const emilEl = document.querySelector('img')
+            t = t + direction
+            emilEl.style.top = t + "px"
+        }
+    </script>
+</body>
+</html>

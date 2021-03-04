@@ -1,0 +1,14 @@
+.coins{
+     background: black;
+     padding: 10px;
+}
+
+.credit-amount{
+    font-weight: bold;
+    color: green;
+}
+
+
+.select-bevarage-title{
+    color: orange
+}
